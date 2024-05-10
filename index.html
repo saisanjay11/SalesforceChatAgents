@@ -39,6 +39,16 @@
 	}
 </style>
 
+<style type='text/css'>
+	.embeddedServiceHelpButton .helpButton .uiButton {
+		background-color: #005290;
+		font-family: "Arial", sans-serif;
+	}
+	.embeddedServiceHelpButton .helpButton .uiButton:focus {
+		outline: 1px solid #005290;
+	}
+</style>
+
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
@@ -68,14 +78,14 @@
 			'https://curious-unicorn-7hm5s5-dev-ed.trailblaze.my.salesforce-sites.com/liveAgentSetupFlow',
 			gslbBaseURL,
 			'00D5j00000DrJLP',
-			'EcommerceChatAgent',
+			'Chat_Agent',
 			{
 				baseLiveAgentContentURL: 'https://c.la2-c2-hnd.salesforceliveagent.com/content',
 				deploymentId: '5725j000000g84u',
-				buttonId: '5735j000000g8Uc',
+				buttonId: '5735j000000g8UX',
 				baseLiveAgentURL: 'https://d.la2-c2-hnd.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EcommerceChatAgent',
-				isOfflineSupportEnabled: false
+				eswLiveAgentDevName: 'Chat_Agent',
+				isOfflineSupportEnabled: true
 			}
 		);
 	};
